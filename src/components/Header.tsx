@@ -3,7 +3,7 @@ import Link from "next/link";
 export const Header = () => {
   return (
     <>
-      <header>
+      <header className="bg-background-contrast px-6 text-white">
         <Link href={"/"}>
           Logo<span className="sr-only">Back to Homepage</span>
         </Link>

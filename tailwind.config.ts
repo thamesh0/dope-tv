@@ -11,9 +11,9 @@ const config: Config = {
   theme: {
     colors: {
       white: "#ffffff",
-      black: "#000000",
-      "black-contrast": "#111111",
-      "text-black": "#1d1d1f",
+      background: "#000000",
+      "background-contrast": "#111111",
+      "text-dark": "#1d1d1f",
     },
     extend: {},
   },
