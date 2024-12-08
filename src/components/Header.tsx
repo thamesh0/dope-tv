@@ -1,18 +1,26 @@
 import Link from "next/link";
+import { Container } from "./Container";
 
 export const Header = () => {
-  return (
-    <>
-      <header className="bg-background-contrast px-6 text-white">
-        <Link href={"/"}>
-          Logo<span className="sr-only">Back to Homepage</span>
-        </Link>
-      </header>
-      <StickyHeader />
-    </>
-  );
+	return (
+		<>
+			<header className='bg-background-contrast text-primary min-h-12 px-6'>
+				<Link
+					href={"/"}
+					className='min-h-12 flex items-center px-6 -ml-6'
+				>
+					Logo
+				</Link>
+			</header>
+			<StickyHeader />
+		</>
+	);
 };
 
 const StickyHeader = () => {
-  return <div className="bg-black px-6 text-white">Apple TV +</div>;
+	return (
+		<div className='min-h-12 text-primary bg-background sticky top-0 flex items-center px-6 -ml-6'>
+			<Container>Apple TV +</Container>
+		</div>
+	);
 };
